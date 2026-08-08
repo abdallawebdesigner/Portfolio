@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdalla Muse — WordPress Developer & Web Designer</title>
+    <!-- Google Fonts: Plus Jakarta Sans for high-end Apple editorial typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Custom Micro-Interactive Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- Floating Navigation Bar -->
+    <header class="main-header">
+        <div class="nav-container">
+            <a href="#" class="logo-wrapper">
+                <img src="/wp-content/uploads/2026/07/Abdalla-logo.png" alt="Abdalla Muse Logo" class="brand-logo">
+                <span class="logo-text">Abdalla.</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#process" class="nav-link">Process</a>
+                <a href="#contact" class="nav-link nav-btn-cta">Work with Me</a>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav">
+        <div class="mobile-nav-links">
+            <a href="#hero" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#portfolio" class="mobile-link">Portfolio</a>
+            <a href="#process" class="mobile-link">Process</a>
+            <a href="#contact" class="mobile-link mobile-btn-cta">Work with Me</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-text-content">
+                <div class="badge-container hero-badge">
+                    <span class="pulse-indicator"></span>
+                    <span class="badge-text">Available for Freelance & Agency Projects</span>
+                </div>
+                <h1 class="hero-title">
+                    WordPress & <br>
+                    <span class="gradient-text">Web Developer</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Designing unique digital things that make brand experiences feel a little better. Partnering with agencies and small businesses globally.
+                </p>
+                <div class="hero-actions">
+                    <a href="#portfolio" class="btn btn-primary magnetic-element">
+                        <span>View My Work</span>
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6464L8.29289 6H4.5C4.22386 6 4 5.77614 4 5.5C4 5.22386 4.22386 5 4.5 5H9.5C9.77614 5 10 5.22386 10 5.5V10.5C10 10.7761 9.77614 11 9.5 11C9.22386 11 9 10.7761 9 10.5V6.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary magnetic-element">
+                        <span>Start a Project</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Tilted Fan Deck Row (Inspired by your screenshot) -->
+            <div class="hero-cards-deck">
+                <div class="deck-wrapper">
+                    <div class="deck-card card-1">
+                        <img src="/wp-content/uploads/2026/07/Revana-Homes-Home-Remodeling-ADU-Construction-06-04-2026_11_23_AM-1-scaled-1.png" alt="Revana Homes Project">
+                    </div>
+                    <div class="deck-card card-2">
+                        <img src="/wp-content/uploads/2026/07/scrnli_Pypem6ke5WcLKu-1-scaled-1.png" alt="Dynamic Portal Project">
+                    </div>
+                    <div class="deck-card card-3">
+                        <img src="/wp-content/uploads/2026/07/IRAD-Institute-for-Research-Analysis-Dialogue-06-04-2026_12_44_PM-scaled-1.png" alt="IRAD Institute Project">
+                    </div>
+                    <div class="deck-card card-4">
+                        <img src="/wp-content/uploads/2026/07/Salov-Tile-Inc-06-04-2026_11_26_AM-scaled-1.png" alt="Salov Tile Project">
+                    </div>
+                    <div class="deck-card card-5">
+                        <img src="/wp-content/uploads/2026/07/LGCY-Leasing-06-04-2026_12_37_PM-scaled-1.png" alt="LGCY Leasing Project">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <div class="about-image-frame">
+                        <img src="/wp-content/uploads/2026/07/My-Photo.png" alt="Abdalla Muse" class="about-photo">
+                        <div class="accent-box"></div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-tagline">About Me</span>
+                    <h2 class="section-title">Bringing Custom Designs to Life.</h2>
+                    <p class="about-paragraph">
+                        With over 6 years of experience, I build fast, secure, and responsive WordPress sites. I act as a reliable partner for creative agencies and brands looking for professional front-end and WordPress support.
+                    </p>
+                    <p class="about-paragraph">
+                        I focus on turning layout files into semantic, lightning-fast code that performs perfectly across all web platforms.
+                    </p>
+
+                    <!-- Animated Stats -->
+                    <div class="stats-panel">
+                        <div class="stat-card">
+                            <div class="stat-num-row">
+                                <span class="stat-number" data-target="120">0</span><span class="stat-plus">+</span>
+                            </div>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-num-row">
+                                <span class="stat-number" data-target="6">0</span><span class="stat-plus">+</span>
+                            </div>
+                            <span class="stat-label">Years of Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section (New Section) -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header align-center">
+                <span class="section-tagline">Technical Arsenal</span>
+                <h2 class="section-title">Skills & Competencies</h2>
+                <p class="section-subtitle">A breakdown of my professional development capabilities and standard tools.</p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Skill Set 1 -->
+                <div class="skill-group-card">
+                    <div class="skill-header">
+                        <span class="skill-icon"><i class="fa-brands fa-wordpress"></i></span>
+                        <h3>WordPress Core</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li>Custom Theme Development</li>
+                        <li>WooCommerce Architecture</li>
+                        <li>Dynamic Elementor Templates</li>
+                        <li>Advanced Custom Fields (ACF)</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Set 2 -->
+                <div class="skill-group-card">
+                    <div class="skill-header">
+                        <span class="skill-icon"><i class="fa-solid fa-code"></i></span>
+                        <h3>Front-End Dev</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li>HTML5 & Semantic Structure</li>
+                        <li>Modern CSS3 & Flexbox/Grid</li>
+                        <li>ES6 JavaScript & Interactivity</li>
+                        <li>Responsive Mobile-First Design</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Set 3 -->
+                <div class="skill-group-card">
+                    <div class="skill-header">
+                        <span class="skill-icon"><i class="fa-solid fa-gauge-high"></i></span>
+                        <h3>Optimization</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li>Core Web Vitals Tuning</li>
+                        <li>Speed Optimization & Caching</li>
+                        <li>Image Minimization</li>
+                        <li>SEO-Friendly Code Standards</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Set 4 -->
+                <div class="skill-group-card">
+                    <div class="skill-header">
+                        <span class="skill-icon"><i class="fa-solid fa-arrows-spin"></i></span>
+                        <h3>Workflow</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li>Figma to WordPress Conversion</li>
+                        <li>Agency Handovers</li>
+                        <li>Clear Client Handoffs</li>
+                        <li>Ongoing Site Support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section (Updated Grid with Hover and Entry Animation) -->
+    <section id="portfolio" class="portfolio-grid-section">
+        <div class="container">
+            <div class="section-header align-center">
+                <span class="section-tagline">Recent Handoffs</span>
+                <h2 class="section-title">Selected Projects</h2>
+                <p class="section-subtitle">Explore a collection of websites built for optimal speed and polished UI/UX experiences.</p>
+            </div>
+
+            <div class="portfolio-interactive-grid">
+                <!-- Item 1 -->
+                <div class="grid-project-card">
+                    <div class="project-img-wrapper">
+                        <img src="/wp-content/uploads/2026/07/Revana-Homes-Home-Remodeling-ADU-Construction-06-04-2026_11_23_AM-1-scaled-1.png" alt="Revana Homes">
+                        <div class="project-overlay">
+                            <span class="overlay-btn btn btn-primary btn-sm">Explore Project</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Construction & Design</span>
+                        <h3>Revana Homes</h3>
+                        <p>Modern luxury architectural portfolio and dynamic services platform.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="grid-project-card">
+                    <div class="project-img-wrapper">
+                        <img src="/wp-content/uploads/2026/07/scrnli_Pypem6ke5WcLKu-1-scaled-1.png" alt="SaaS Portal Layout">
+                        <div class="project-overlay">
+                            <span class="overlay-btn btn btn-primary btn-sm">Explore Project</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">UI/UX & SaaS</span>
+                        <h3>Dynamic Web Portal</h3>
+                        <p>A clean, visual layout optimized for client dashboard analytics.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="grid-project-card">
+                    <div class="project-img-wrapper">
+                        <img src="/wp-content/uploads/2026/07/IRAD-Institute-for-Research-Analysis-Dialogue-06-04-2026_12_44_PM-scaled-1.png" alt="IRAD Institute">
+                        <div class="project-overlay">
+                            <span class="overlay-btn btn btn-primary btn-sm">Explore Project</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Education & Research</span>
+                        <h3>IRAD Institute</h3>
+                        <p>An institutional dashboard built for publications and research dialogues.</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="grid-project-card">
+                    <div class="project-img-wrapper">
+                        <img src="/wp-content/uploads/2026/07/Salov-Tile-Inc-06-04-2026_11_26_AM-scaled-1.png" alt="Salov Tile">
+                        <div class="project-overlay">
+                            <span class="overlay-btn btn btn-primary btn-sm">Explore Project</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Showroom & E-Commerce</span>
+                        <h3>Salov Tile Inc.</h3>
+                        <p>Immersive product design catalogs prioritizing rapid media loading.</p>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="grid-project-card">
+                    <div class="project-img-wrapper">
+                        <img src="/wp-content/uploads/2026/07/LGCY-Leasing-06-04-2026_12_37_PM-scaled-1.png" alt="LGCY Leasing">
+                        <div class="project-overlay">
+                            <span class="overlay-btn btn btn-primary btn-sm">Explore Project</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Finance & Automotive</span>
+                        <h3>LGCY Leasing</h3>
+                        <p>Premium car database interfaces integrated with dynamic query systems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process-section">
+        <div class="container">
+            <div class="section-header align-center">
+                <span class="section-tagline">My Process</span>
+                <h2 class="section-title">Workflow Strategy</h2>
+                <p class="section-subtitle">How I take digital products from early blueprint layout stages to launch.</p>
+            </div>
+
+            <div class="process-flow-row">
+                <div class="process-step">
+                    <span class="step-num">01</span>
+                    <h3>Discovery</h3>
+                    <p>Discussing specifications, compiling assets, and analyzing speed targets.</p>
+                </div>
+                <div class="process-step">
+                    <span class="step-num">02</span>
+                    <h3>Design</h3>
+                    <p>Refining mockups and selecting fonts for high-quality responsive scaling.</p>
+                </div>
+                <div class="process-step">
+                    <span class="step-num">03</span>
+                    <h3>Develop</h3>
+                    <p>Writing organized CSS alongside dynamic core structures in WordPress.</p>
+                </div>
+                <div class="process-step">
+                    <span class="step-num">04</span>
+                    <h3>Launch</h3>
+                    <p>Performing site speed tests, caching setups, and deploying onto your servers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-card glass-panel">
+                <div class="contact-grid-split">
+                    <div class="contact-text">
+                        <div class="badge-container availability-badge animate-pulse">
+                            <span class="pulse-indicator"></span>
+                            <span class="badge-text">Accepting Client Work</span>
+                        </div>
+                        <h2 class="contact-title-display">Let's build a fast, high-end website together.</h2>
+                        <p>Drop a line with your project details or agency requirements, and I will get back to you within 24 hours.</p>
+                        
+                        <div class="info-link-block">
+                            <a href="mailto:hello@abdallamuse.com" class="info-link-item magnetic-element">
+                                <span class="info-icon"><i class="fa-solid fa-envelope"></i></span>
+                                <span>abdulmusa360@gmail.com</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-block">
+                        <form id="portfolio-form" class="clean-form">
+                            <div class="form-group floating-label-group">
+                                <input type="text" id="name" required placeholder=" ">
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="form-group floating-label-group">
+                                <input type="email" id="email" required placeholder=" ">
+                                <label for="email">Your Email</label>
+                            </div>
+                            <div class="form-group floating-label-group">
+                                <textarea id="message" rows="5" required placeholder=" "></textarea>
+                                <label for="message">About your project...</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary submit-btn magnetic-element">
+                                <span>Send Message</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-branding">
+                    <span class="logo-text">Abdalla Muse</span>
+                    <p>WordPress Developer & Web Designer based in Mogadishu, Somalia.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#hero">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-credits">
+                <p>&copy; 2026 Abdalla Muse. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP core & ScrollTrigger via High-Performance CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
