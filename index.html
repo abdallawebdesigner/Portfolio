@@ -114,7 +114,7 @@
                 </div>
                 <div class="about-content">
                     <span class="section-tagline">About Me</span>
-                    <h2 class="section-title">A Bit About Abdalla</h2>
+                    <h2 class="section-title">Behind The Work</h2>
                         <p class="about-paragraph">
         I'm Abdalla Muse, a WordPress developer focused on creating modern,
         high-quality websites for businesses and agencies.
@@ -334,7 +334,7 @@
 <section class="trusted-section">
     <div class="container">
         <div class="trusted-header">
-            <span class="section-tagline">Collaboration</span>
+            <span class="section-tagline">Collaborations</span>
             <h2 class="trusted-title">Trusted by Businesses & Agencies</h2>
             <p class="trusted-subtitle">
                 I've worked with agencies, businesses, and teams to design, develop, and deliver high-quality websites across a range of industries.
@@ -571,6 +571,50 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+    emailjs.init({
+        publicKey: "R_dMvzJjPbwJ67xb1"
+    });
+
+    document.getElementById("portfolio-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const button = this.querySelector(".submit-btn");
+        const buttonText = button.querySelector("span");
+
+        button.disabled = true;
+        buttonText.textContent = "Sending...";
+
+        emailjs.sendForm(
+            "service_94u5r2k",
+            "template_rm5r7ns",
+            this
+        ).then(
+            function() {
+                buttonText.textContent = "Message Sent!";
+
+                document.getElementById("portfolio-form").reset();
+
+                setTimeout(() => {
+                    buttonText.textContent = "Send Message";
+                    button.disabled = false;
+                }, 3000);
+            },
+            function(error) {
+                console.error("EmailJS Error:", error);
+
+                buttonText.textContent = "Failed to Send";
+
+                setTimeout(() => {
+                    buttonText.textContent = "Send Message";
+                    button.disabled = false;
+                }, 3000);
+            }
+        );
+    });
+</script>
 
     <!-- GSAP core & ScrollTrigger via High-Performance CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>

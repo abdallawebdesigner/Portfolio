@@ -1159,6 +1159,10 @@ p {
 @media(max-width: 1024px) {
     .contact-grid-split { grid-template-columns: 1fr; }
     .contact-card { padding: 32px; }
+    .submit-btn {
+    width: 100%;
+    padding: 16px;
+}
 }
 
 
