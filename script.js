@@ -1,4 +1,4 @@
-<script>
+
 // Register ScrollTrigger safely
 gsap.registerPlugin(ScrollTrigger);
 
@@ -238,4 +238,3 @@ function initContactForm() {
         }, 1000);
     });
 }    
-</script>
