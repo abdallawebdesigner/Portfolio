@@ -591,7 +591,14 @@ p {
 @media(max-width: 1024px) {
     .about-grid { grid-template-columns: 1fr; gap: 48px; }
     .about-image-wrapper { order: 2; display: flex; justify-content: center; }
-    .about-photo{overflow: visible;}
+    .about-photo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 999;
+    position: relative;
+    overflow: visible;
+    }
 }
 
 
