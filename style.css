@@ -329,6 +329,7 @@ p {
 @media(max-width: 820px) {
     .nav-links { display: none; }
     .mobile-menu-toggle { display: block; }
+    .main-header {padding: 0 5px !important;}
 }
 
 
@@ -590,6 +591,7 @@ p {
 @media(max-width: 1024px) {
     .about-grid { grid-template-columns: 1fr; gap: 48px; }
     .about-image-wrapper { order: 2; display: flex; justify-content: center; }
+    .about-photo{overflow: visible;}
 }
 
 
@@ -1186,11 +1188,14 @@ p {
     font-size: 0.9rem;
     color: var(--color-text-muted);
     margin-top: 8px;
+    text-align: center !important;
 }
 
 .footer-links {
     display: flex;
+    justify-content:space-evenly;
     gap: 24px;
+    text-align: center !important;
 }
 
 .footer-links a {
